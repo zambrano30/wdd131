@@ -5,12 +5,12 @@ body{
 
 }
 header{
-    background-color: #8a2be2;
+    background-color: #6a44d2;
     grid-column:1/4;
     padding:2rem;
 }
 nav{
-    background-color:black;
+    background-color:rgb(41, 39, 39);
     grid-auto-flow:column;
     grid-column:1/4;
     padding:1rem;
@@ -25,18 +25,18 @@ ul{
     padding:0;
 }
 main{
-    background-color:rgb(233, 140, 18);
+    background-color:rgb(226, 218, 208);
     grid-column:2/3;
     height: 100vh;
 }
 aside{
-    background-color: #8a2be2;
+    background-color:rgb(226, 218, 208);
     grid-column:3/4;
     width: 40vh
     
 }
 footer{
-    background-color: burlywood;
+    background-color:#6a44d2;;
     grid-column:1/4;
     padding:3rem;
     text-align:center;
