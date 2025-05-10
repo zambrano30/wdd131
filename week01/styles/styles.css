@@ -1,43 +1,80 @@
 body{
-    display:grid;
-    margin:0;
-    grid-template: auto 1fr auto / auto 1fr auto;
-
+  font-family: 'Courier New';
 }
 header{
-    background-color: #8a2be2;
-    grid-column:1/4;
-    padding:2rem;
-}
-nav{
-    background-color:black;
-    grid-auto-flow:column;
-    grid-column:1/4;
-    padding:1rem;
-    text-align:center;
+  background-color:rgb(54, 54, 87) ;
+  color: white;
+  font-size: 5rem;
+    padding: 1rem;
 
 }
+h1{
+  text-align: center;
+  font-size: 2rem;
+}
+span{
+    font-size: 1.5rem;
+    color: rgb(221, 233, 60);
+}
+
+    
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(51, 51, 53);
+    color: white;
+    padding: 0.5rem;
+    }
 ul{
-    list-style-type:none;
-    display:grid;
-    grid-auto-flow:column;
-    justify-content:space-around;
-    padding:0;
+  display:flex;
+  list-style-type: none;
+  gap: 10px;
+  padding:0;
+  margin:0;
+  
+.about {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
 }
-main{
-    background-color:rgb(233, 140, 18);
-    grid-column:2/3;
-    height: 100vh;
+
 }
-aside{
-    background-color: #8a2be2;
-    grid-column:3/4;
-    width: 40vh
+.team{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     
 }
+li{
+  margin:0 15px;
+
+  
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:1 rem;
+    padding: 2rem;
+}
+h2{
+    background-color:rgb(54, 54, 87) ;
+    text-align: center;
+    color: white;
+}
+Aside{
+    background-color: aliceblue;
+    grid-column: 3/4;
+}
 footer{
-    background-color: burlywood;
-    grid-column:1/4;
-    padding:3rem;
-    text-align:center;
+  background-color:rgb(54, 54, 87)  ;
+  grid-column: 1/4;
+  text-align: center;
+  
+}
+h4{
+  background-color: white;
 }
