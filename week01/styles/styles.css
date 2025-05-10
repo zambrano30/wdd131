@@ -1,80 +1,95 @@
-body{
-  font-family: 'Courier New';
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
-header{
-  background-color:rgb(54, 54, 87) ;
+
+header {
+  background: #1f3c66;
   color: white;
-  font-size: 5rem;
-    padding: 1rem;
-
-}
-h1{
+  padding: 1.5rem;
   text-align: center;
-  font-size: 2rem;
-}
-span{
-    font-size: 1.5rem;
-    color: rgb(221, 233, 60);
 }
 
-    
+.name {
+  color: #f9db3c;
+}
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(51, 51, 53);
-    color: white;
-    padding: 0.5rem;
-    }
-ul{
-  display:flex;
-  list-style-type: none;
-  gap: 10px;
-  padding:0;
-  margin:0;
-  
-.about {
+nav {
+  background: #3f3a3a;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0;
   padding: 0;
 }
 
+nav li {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
-.team{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    
-}
-li{
-  margin:0 15px;
 
-  
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
 }
-main{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap:1 rem;
-    padding: 2rem;
+
+main, aside {
+  background: white;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-h2{
-    background-color:rgb(54, 54, 87) ;
-    text-align: center;
-    color: white;
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-Aside{
-    background-color: aliceblue;
-    grid-column: 3/4;
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-footer{
-  background-color:rgb(54, 54, 87)  ;
-  grid-column: 1/4;
+
+.text-img {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.text-img img {
+  width: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+aside {
+  text-align: left;
+}
+
+.team li {
+  margin: 0.5rem 0;
+}
+
+footer {
   text-align: center;
-  
+  background: #1f3c66;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
-h4{
-  background-color: white;
-}
+
