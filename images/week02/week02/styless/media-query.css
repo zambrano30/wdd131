@@ -1,0 +1,14 @@
+body{
+    font-family:'Roboto', sans-serif;
+}
+header, main, footer{
+    margin:1rem auto;
+    background-color: rgb(119, 198, 223);
+    width: 640px;
+    padding:o.5rem;
+}
+section{ 
+    padding:2rem;
+    background-color: blanchedalmond;
+
+}
