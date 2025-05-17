@@ -3,71 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christopher Zambrano - Landing Page</title>
-    <link rel="stylesheet" href="styles/styles.css">
-
+  <title>WDD 131 – Dynamic Web Fundamentals - Christopher Zambrano</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Christopher Zambrano. Home page, about me, favorite soccer teams, and more.">
+  <meta name="author" content="Christopher Zambrano">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
   <header>
     <h1>WDD 131: Dynamic Web Fundamentals - <span class="name">Christopher A Zambrano</span></h1>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/christopher-zambrano-943825318/">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/130?lang=eng&id=p2#p2">Scripture</a></li>
+        <li><a href="#">Final project</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/christopher-zambrano-943825318/"> LinkedIn</a></li>
-      <li><a href="https://byupw.instructure.com/about/33467" >Canvas</a></li>
-      <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/130?lang=eng&id=p2#p2" >Scripture</a></li>
-      <li><a href="#" >Final project</a></li>
-    </ul>
-  </nav>
-  <div class="content">
-    <main>
-      <div class="card">
-        <h2>About me</h2>
-        <div class="text-img">
-          <div>
-            <p>
-              I am Christopher Zambrano, a software development student at BYU Idaho. I love listening to music while coding.
-              I have a beautiful wife who supports me in my career.
-              I would like to develop a web app.
-              I am a big fan of Real Madrid; watching soccer matches is my favorite thing to do in my free time.
-            </p>
-          </div>
-          <img src="images/me.jpg" alt="me">
+  <main>
+    <section class="card">
+      <h2>About me</h2>
+      <div class="text-img">
+        <div>
+          <p>
+            I am Christopher Zambrano, a software development student at BYU Idaho. I love listening to music while coding.
+            I have a beautiful wife who supports me in my career.
+            I would like to develop a web app.
+            I am a big fan of Real Madrid; watching soccer matches is my favorite thing to do in my free time.
+          </p>
         </div>
+        <img src="images/me.jpg" alt="me">
       </div>
-
-      <div class="card">
-        <h3>Real Madrid</h3>
-        <div class="text-img">
-          <div>
-            <p>
-              Real Madrid is a Spanish team with legendary players like Cristiano Ronaldo, Ronaldo Nazario, Roberto Carlos, Figo, etc.
-              It is the team with the most UEFA Champions League trophies.
-            </p>
-          </div>
-          <img src="images/realmadrid.jpg" alt="realmadrid">
+    </section>
+    <section class="card">
+      <h3>Real Madrid</h3>
+      <div class="text-img">
+        <div>
+          <p>
+            Real Madrid is a Spanish team with legendary players like Cristiano Ronaldo, Ronaldo Nazario, Roberto Carlos, Figo, etc.
+            It is the team with the most UEFA Champions League trophies.
+          </p>
         </div>
+        <img src="images/realmadrid.jpg" alt="realmadrid">
       </div>
-    </main>
-  
-  
-      <aside>
-        <h2>My favorite soccer teams</h2>
-        <ul class="team">
-          <li >Real Madrid</li>
-          <li >Emelec</li>
-          <li >Manchester City</li>
-          <li >Peñarol</li>
-          <li >River Plate</li>
-          <li>Paris Saint-Germain</li>
-
-        </ul>
-      </aside>
-    </div>
+    </section>
+    <aside>
+      <h2>My favorite soccer teams</h2>
+      <ul class="team">
+        <li>Real Madrid</li>
+        <li>Emelec</li>
+        <li>Manchester City</li>
+        <li>Peñarol</li>
+        <li>River Plate</li>
+        <li>Paris Saint-Germain</li>
+      </ul>
+    </aside>
+  </main>
   <footer>
-    <p>©2025 Developed by Christopher Zambrano</p>
-  
+    <p>&copy; <span id="currentyear"></span> Christopher Zambrano, Ecuador</p>
+    <p id="lastModified"></p>
   </footer>
-  
 </body>
 </html>
