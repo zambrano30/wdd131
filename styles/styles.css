@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background:  #1f3c66;
+  background: linear-gradient(90deg, #022404 60%, #1f3c66 100%);
   color: #fff;
   padding: 2rem 1rem 1rem 1rem;
   text-align: center;
@@ -113,7 +113,7 @@ aside h2 {
 
 footer {
   text-align: center;
-  background:  #1f3c66;
+  background: linear-gradient(90deg, #1f3c66 60%, #022404 100%);
   color: #fff;
   padding: 1.2rem 0 1rem 0;
   font-size: 1rem;
@@ -121,4 +121,6 @@ footer {
   margin-top: 2rem;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.06);
 }
+
+
 
