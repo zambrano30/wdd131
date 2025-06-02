@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uruguay - Página de País</title>
+    <meta name="description" content="Página informativa sobre Uruguay, datos generales y clima actual.">
+    <meta name="author" content="Christopher Zambrano">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Uruguay</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/uruguay-hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/uruguay-hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/uruguay-hero-small.webp" alt="Vista panorámica de Uruguay">
+            </picture>
+        </section>
+        <div class="main-content">
+            <section class="info">
+                <h2>Datos de Uruguay</h2>
+                <ul>
+                    <li>Capital: Montevideo</li>
+                    <li>Población: 3.5 millones</li>
+                    <li>Idioma: Español</li>
+                    <li>Moneda: Peso uruguayo</li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2>Weather <span class="weather-icon" aria-label="weather"></span></h2>
+                <p>Temperatura: <span id="temp">8</span>°C</p>
+                <p>Viento: <span id="wind">10</span> km/h</p>
+                <p>Sensación térmica: <span id="windchill">N/A</span></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Christopher A Zambrano Villavicencio</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
