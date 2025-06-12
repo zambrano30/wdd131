@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #003366;       /* Azul marino (alto contraste) */
+    --secondary-color: #ffffff;     /* Blanco */
+    --accent-color: #0059b3;        /* Azul intermedio */
+    --border-radius: 8px;
+    --font-family: 'Segoe UI', Arial, sans-serif;
+    --text-dark: #001122;           /* Azul muy oscuro */
+    --text-light: #ffffff;          /* Blanco */
+    --input-bg: #f2f7fb;            /* Azul muy claro */
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--text-light);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--accent-color);
+    color: var(--text-light);
+}
+
+main {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: var(--secondary-color);
+    color: var(--text-dark);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label, legend {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.7rem;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    color: var(--text-dark);
+    background: var(--input-bg);
+    margin-bottom: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 1.2rem 1rem;
+    background: var(--input-bg);
+    margin-bottom: 1.5rem;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 2rem;
+    color: #d0d6dc; /* gris visible */
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.stars input[type="radio"]:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #ffc107; /* amarillo dorado */
+}
+
+input[type="checkbox"] {
+    accent-color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    background: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 24px auto 0;
+}
+
+input[type="submit"]:hover {
+    background: var(--accent-color);
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+}
+
+p, h1 {
+    color: var(--secondary-color);
+}
+
+
+
+
